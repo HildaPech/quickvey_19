@@ -78,7 +78,6 @@ public class frmEncuesta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(950, 640));
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(188, 219, 246));
@@ -159,7 +158,7 @@ public class frmEncuesta extends javax.swing.JFrame {
             .addGap(0, 20, Short.MAX_VALUE)
         );
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel1.setText("1. ¿Se ha sentido con nervios, ansiedad o muy alterado(a)?");
 
         cboRespuesta1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -171,17 +170,17 @@ public class frmEncuesta extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel2.setText("2. ¿Se ha preocupado excesivamente por diferentes cosas?");
 
         cboRespuesta2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         cboRespuesta2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nunca", "Casi nunca", "Ocasionalmente", "Casi todos los días", "Todos los días" }));
         cboRespuesta2.setPreferredSize(new java.awt.Dimension(180, 25));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel3.setText("3. ¿Ha sentido miedo, como si fuera a suceder algo terrible?");
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel4.setText("4. ¿Ha tenido poco interés o alegría por hacer cosas?");
 
         cboRespuesta3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -192,10 +191,10 @@ public class frmEncuesta extends javax.swing.JFrame {
         cboRespuesta4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nunca", "Casi nunca", "Ocasionalmente", "Casi todos los días", "Todos los días" }));
         cboRespuesta4.setPreferredSize(new java.awt.Dimension(180, 25));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel5.setText("5. ¿Ha tenido poco apetito o ha comido demasiado?");
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel6.setText("6. ¿Ha aprovechado para aprender cosas nuevas (nuevos estudios, hobbies, etc.)?");
 
         cboRespuesta5.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -206,10 +205,10 @@ public class frmEncuesta extends javax.swing.JFrame {
         cboRespuesta6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nunca", "Casi nunca", "Ocasionalmente", "Casi todos los días", "Todos los días" }));
         cboRespuesta6.setPreferredSize(new java.awt.Dimension(180, 25));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel8.setText("7. ¿Ha aprovechado para adelantar trabajo o hacer gestiones que tenía atrasadas?");
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel9.setText("8. ¿Ha hecho más actividades en familia o con las personas con las que convive?");
 
         cboRespuesta7.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -220,10 +219,10 @@ public class frmEncuesta extends javax.swing.JFrame {
         cboRespuesta8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nunca", "Casi nunca", "Ocasionalmente", "Casi todos los días", "Todos los días" }));
         cboRespuesta8.setPreferredSize(new java.awt.Dimension(180, 25));
 
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel10.setText("<html><body>9. Durante los últimos días, ¿ha experimentado dolor de cabeza, irritabilidad, desgano, problemas de atención<br>&nbsp;&nbsp;&nbsp;&nbsp;o dificultad para dormir?</body></html>");
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel11.setText("10. ¿Ha efectuado actividades que le relajan como aficiones (yoga, escuchar música, etc.)?");
 
         cboRespuesta9.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
@@ -259,7 +258,7 @@ public class frmEncuesta extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(cboRespuesta1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(cboRespuesta2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)

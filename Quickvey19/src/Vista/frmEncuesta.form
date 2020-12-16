@@ -4,9 +4,6 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="undecorated" type="boolean" value="true"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[950, 640]"/>
-    </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -51,7 +48,7 @@
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="74" max="32767" attributes="0"/>
+                      <EmptySpace pref="5" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="cboRespuesta1" max="32767" attributes="0"/>
                           <Component id="cboRespuesta2" max="32767" attributes="0"/>
@@ -284,7 +281,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="1. &#xbf;Se ha sentido con nervios, ansiedad o muy alterado(a)?"/>
       </Properties>
@@ -318,7 +315,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="2. &#xbf;Se ha preocupado excesivamente por diferentes cosas?"/>
       </Properties>
@@ -349,7 +346,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="3. &#xbf;Ha sentido miedo, como si fuera a suceder algo terrible?"/>
       </Properties>
@@ -357,7 +354,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="4. &#xbf;Ha tenido poco inter&#xe9;s o alegr&#xed;a por hacer cosas?"/>
       </Properties>
@@ -411,7 +408,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="5. &#xbf;Ha tenido poco apetito o ha comido demasiado?"/>
       </Properties>
@@ -419,7 +416,7 @@
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="6. &#xbf;Ha aprovechado para aprender cosas nuevas (nuevos estudios, hobbies, etc.)?"/>
       </Properties>
@@ -473,7 +470,7 @@
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="7. &#xbf;Ha aprovechado para adelantar trabajo o hacer gestiones que ten&#xed;a atrasadas?"/>
       </Properties>
@@ -481,7 +478,7 @@
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="8. &#xbf;Ha hecho m&#xe1;s actividades en familia o con las personas con las que convive?"/>
       </Properties>
@@ -535,7 +532,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;body&gt;9. Durante los &#xfa;ltimos d&#xed;as, &#xbf;ha experimentado dolor de cabeza, irritabilidad, desgano, problemas de atenci&#xf3;n&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;o dificultad para dormir?&lt;/body&gt;&lt;/html&gt;"/>
       </Properties>
@@ -543,7 +540,7 @@
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="13" style="0"/>
+          <Font name="Arial" size="13" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="10. &#xbf;Ha efectuado actividades que le relajan como aficiones (yoga, escuchar m&#xfa;sica, etc.)?"/>
       </Properties>
