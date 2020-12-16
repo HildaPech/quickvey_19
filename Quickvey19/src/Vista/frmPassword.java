@@ -10,7 +10,7 @@ import java.awt.Color;
 
 /**
  *
- * @author Maria May
+ * @author salvador.santos
  */
 public class frmPassword extends javax.swing.JFrame {
 
