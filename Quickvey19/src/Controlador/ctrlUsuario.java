@@ -1,9 +1,16 @@
 package Controlador;
 
+import Modelo.Persona;
 import Modelo.Usuario;
+import Modelo.sqlPersona;
 import Modelo.sqlUsuario;
+import Vista.frmInicioSesion;
+import Vista.frmMenuUsuario;
+import Vista.frmPassword;
+import Vista.frmPerfilUsuario;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.System.Logger;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,23 +18,44 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 public class ctrlUsuario implements ActionListener {
+    private Persona persona;
+    private sqlPersona sqlPersona;
     private Usuario usuario;
     private sqlUsuario sqlUsuario;
-   
+    private frmMenuUsuario frmMenuUsuario;
+    private frmPassword frmPassword;
+    private frmPerfilUsuario frmPerfilUsuario;
+    private ctrlPassword ctrlPassword;
     
-    public ctrlUsuario(Usuario usuario, sqlUsuario sqlUsuario) {
-        
+    public ctrlUsuario(Persona persona, sqlPersona sqlPersona, Usuario usuario, sqlUsuario sqlUsuario, frmMenuUsuario frmMenuUsuario, frmPerfilUsuario frmPerfilUsuario, frmPassword frmPassword, ctrlPassword ctrlPassword) {
+        this.persona = persona;
+        this.sqlPersona = sqlPersona;
         this.usuario = usuario;
         this.sqlUsuario = sqlUsuario;
-        
+        this.frmMenuUsuario = frmMenuUsuario;
+        this.frmPassword = frmPassword;
+        this.frmPerfilUsuario = frmPerfilUsuario;
+        this.ctrlPassword = ctrlPassword;
+        this.frmPerfilUsuario.btnCerrar.addActionListener(this);
+        this.frmPerfilUsuario.btnEditarPerfil.addActionListener(this);
+        this.frmPerfilUsuario.btnModificarPassword.addActionListener(this);
+        this.frmPerfilUsuario.btnEliminarCuenta.addActionListener(this);
+        this.frmPerfilUsuario.btnGuardar.addActionListener(this);
+        this.frmPerfilUsuario.btnCancelar.addActionListener(this);
     }
     
+    public void ejecutarFormuluario() {
+        frmPerfilUsuario.setTitle("Información del Perfil");
+        frmPerfilUsuario.setLocationRelativeTo(null);
+        llenarCampos();
+        inactivarObjetos();
+    }
     
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == frmPerfilUsuario.btnCerrar) {
             frmPerfilUsuario.setVisible(false);
-            frmMenuPrincipal.setVisible(true);
+            frmMenuUsuario.setVisible(true);
         }
         
         if (e.getSource() == frmPerfilUsuario.btnEditarPerfil) {
@@ -154,8 +182,8 @@ public class ctrlUsuario implements ActionListener {
     }
     
     public void llenarCampos() {
-        persona.setIdPersona(Integer.parseInt(frmMenuPrincipal.txtIdPersona.getText()));
-        usuario.setIdUsuario(Integer.parseInt(frmMenuPrincipal.txtIdUsuario.getText()));
+        persona.setIdPersona(Integer.parseInt(frmMenuUsuario.txtIdPersona.getText()));
+        usuario.setIdUsuario(Integer.parseInt(frmMenuUsuario.txtIdUsuario.getText()));
         
         sqlPersona.visualizarPersona(persona);
         

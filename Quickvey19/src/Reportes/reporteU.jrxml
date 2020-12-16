@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteU" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="601a3e30-56f4-4689-b996-e7482632e740">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="141"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     tbl_perfiles.`iIdPerfil` AS tbl_perfiles_iIdPerfil,
+     tbl_perfiles.`cNombrePerfil` AS tbl_perfiles_cNombrePerfil,
+     tbl_perfiles.`lActivo` AS tbl_perfiles_lActivo,
+     tbl_perfiles.`dtAlta` AS tbl_perfiles_dtAlta,
+     tbl_perfiles.`dtModificacion` AS tbl_perfiles_dtModificacion
+FROM
+     `tbl_perfiles` tbl_perfiles]]>
+	</queryString>
+	<field name="tbl_perfiles_iIdPerfil" class="java.lang.Integer"/>
+	<field name="tbl_perfiles_cNombrePerfil" class="java.lang.String"/>
+	<field name="tbl_perfiles_lActivo" class="java.lang.Boolean"/>
+	<field name="tbl_perfiles_dtAlta" class="java.sql.Timestamp"/>
+	<field name="tbl_perfiles_dtModificacion" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="297" y="33" width="190" height="50" uuid="51f28c39-0874-4b7b-84c6-f5b18c943b61"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Perfiles de usuarios]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="-101" width="227" height="101" uuid="9b6e3de6-0dcb-4e28-b202-e842f7c6377b"/>
+				<imageExpression><![CDATA["D:\\Documents\\Programación orientada a abjetos\\logo2.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="76" y="2" width="100" height="20" uuid="70f30447-bd70-4b10-a1c0-e531f6d0d728"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Numero de perfil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="2" width="100" height="20" uuid="670e78e6-8d83-4d18-93f5-52f7eb35b6a7"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Tipo de perfil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="2" width="100" height="20" uuid="35e4fdf5-307a-4da9-87ca-fb5871bcb2b5"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de alta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="615" y="2" width="134" height="20" uuid="10fc902b-4d6f-42cf-ad2c-96f4c23aa592"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de modificación]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="76" y="29" width="100" height="20" uuid="bf0db2e7-9078-4d61-b19a-2184b974b674"/>
+				<textFieldExpression><![CDATA[$F{tbl_perfiles_iIdPerfil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="29" width="100" height="20" uuid="c34d1998-da46-45b9-ba7c-d553170d7b69"/>
+				<textFieldExpression><![CDATA[$F{tbl_perfiles_cNombrePerfil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="29" width="100" height="20" uuid="9c3eb6fc-edba-4514-b585-ea52f58bf738"/>
+				<textFieldExpression><![CDATA[$F{tbl_perfiles_dtAlta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="615" y="29" width="100" height="20" uuid="4d5d6aa1-1718-4d41-bc27-a1e34f72e0d1"/>
+				<textFieldExpression><![CDATA[$F{tbl_perfiles_dtModificacion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,12 +1,14 @@
 package Controlador;
 
-
 import Modelo.PerfilUsuario;
+import Modelo.Persona;
 import Modelo.Usuario;
 import Modelo.hash;
 import Modelo.sqlPerfilUsuario;
+import Modelo.sqlPersona;
 import Modelo.sqlUsuario;
 import Vista.frmInicioSesion;
+import Vista.frmRegistroUsuario;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DateFormat;
