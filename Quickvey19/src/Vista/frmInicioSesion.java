@@ -122,7 +122,7 @@ public class frmInicioSesion extends javax.swing.JFrame {
         txtPassword.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
 
         btnIniciarSesion.setBackground(new java.awt.Color(240, 177, 163));
-        btnIniciarSesion.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 13)); // NOI18N
+        btnIniciarSesion.setFont(new java.awt.Font("Berlin Sans FB Demi", 2, 13)); // NOI18N
         btnIniciarSesion.setText("Iniciar Sesión");
         btnIniciarSesion.setBorderPainted(false);
         btnIniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -134,7 +134,7 @@ public class frmInicioSesion extends javax.swing.JFrame {
         });
 
         btnCrearCuenta.setBackground(new java.awt.Color(240, 177, 163));
-        btnCrearCuenta.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 13)); // NOI18N
+        btnCrearCuenta.setFont(new java.awt.Font("Berlin Sans FB Demi", 2, 13)); // NOI18N
         btnCrearCuenta.setText("Crear Cuenta");
         btnCrearCuenta.setBorderPainted(false);
         btnCrearCuenta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

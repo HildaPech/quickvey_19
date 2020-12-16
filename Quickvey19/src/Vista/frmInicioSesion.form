@@ -229,7 +229,7 @@
               <Color blue="a3" green="b1" red="f0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB Demi" size="13" style="1"/>
+              <Font name="Berlin Sans FB Demi" size="13" style="2"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Iniciar Sesi&#xf3;n"/>
             <Property name="borderPainted" type="boolean" value="false"/>
@@ -251,7 +251,7 @@
               <Color blue="a3" green="b1" red="f0" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB Demi" size="13" style="1"/>
+              <Font name="Berlin Sans FB Demi" size="13" style="2"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Crear Cuenta"/>
             <Property name="borderPainted" type="boolean" value="false"/>
